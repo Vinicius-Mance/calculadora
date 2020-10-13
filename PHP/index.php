@@ -8,7 +8,7 @@
     <title>Calculadora de dinheiro</title>
   </head>
   <body>
-    <form class="container" action="index.php" method="post">
+    <form class="container" action="index.php" method="get">
       <div class="main">
         <label for="grana"><h1>Calcule seu dinheiro físico</h1></label><br>
       </div>
@@ -42,7 +42,8 @@
         </div>
         <div class="calcular">
           <button class="somar" type="submit" name="somar">Somar</button><br>
-        <p id="resultado"><?php echo calcular_dinheiro($cent5,$cent10,$cent25,$cent50,$real1,$real2,$real5,$real10,$real20,$real50,$real100,$real200);?></p>
+          <button class="somar" type="reset" name="button">Limpar campos</button>
+        <p id="resultado"><?php echo calcular_dinheiro();?></p>
       </div>
     </form>
   </body>

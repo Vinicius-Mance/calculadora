@@ -12,10 +12,10 @@ function soma(){
   let real50  = document.getElementById("real50").value;
   let real100  = document.getElementById("real100").value;
   let real200  = document.getElementById("real200").value;
-  let resultado = (cent5 * 5 + cent10 * 10 + cent25 * 25 +
-  cent50 * 50 + real1 * 100 + real2 * 200 + real5 * 500 +
-  real10 * 1000 + real20 * 2000 + real50 * 5000 +
-  real100 * 10000 + real200 * 20000) / 100;
+  let resultado = cent5 * 0.05 + cent10 * 0.1 + cent25 * 0.25 +
+  cent50 * 0.5 + real1 * 1 + real2 * 2 + real5 * 5 +
+  real10 * 10 + real20 * 20 + real50 * 50 +
+  real100 * 100 + real200 * 200;
   if (resultado != 0) {
     document.getElementById("resultado").innerHTML = "Você tem no total "+
     resultado.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
