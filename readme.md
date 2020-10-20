@@ -3,7 +3,7 @@ Calculadora de dinheiro físico
 Esse projeto são códigos simples para facilitar a contagem de moedas e notas. Insira o valor no campo indicado, e pronto. O valor aparece abaixo e a dor de cabeça de lembrar e contar o valor de cada moeda individualmente não é mais necessária
 
 Versões criadas:
-JS: Versão puramente front-end e offline, sem necessidade de conexão ou servidor local
+JS: Versão puramente front-end e offline, sem necessidade de conexão a internet e/ou servidor local
 
 PHP: Versão back-end com PHP. um servidor local é necessário para funcionar
 
