@@ -1,4 +1,3 @@
-<?php include('calculo.php'); ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -50,10 +49,16 @@
           <input id="real200" class="dinheiro" type="number" name="200_rs" placeholder="200,00"><br>
         </label>
         <div class="calcular">
-          <button id="somar" class="somar" type="submit" name="somar">Somar</button><br>
-        <p id="resultado"><?php echo calcular_dinheiro();?></p>
+          <button id="somar" class="somar" type="button" name="somar" onclick="carregarMoedas()">Somar</button><br>
+        <p id="resultado">Não há nada a ser calculado</p>
       </div>
       </div>
     </form>
+    <main id="cambio" class="container">
+    <link rel="stylesheet" href="../css/index.css">
+        <h2>Equivalente em outras moedas:</h2>
+        <section id="outrasCotacoes"></section>
+    </main>
   </body>
 </html>
+<script src="index.js"></script>
